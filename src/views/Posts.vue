@@ -29,7 +29,7 @@
     :limitsAll="limitsAll"
     @changePage="changePage"
   />
-<!--  <my-dialog :show="true"><input type="text"> </my-dialog>-->
+<!--  <my-dialog :show="true"> <input type="text"> </my-dialog>-->
 </template>
 
 <script>
