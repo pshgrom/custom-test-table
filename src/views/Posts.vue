@@ -80,7 +80,6 @@ export default {
       try {
         loader.value = true
         const response = await axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page.value}&_limit=${limit.value}`)
-        console.log(response)
         totalPage.value = Math.ceil(response.headers['x-total-count'] / limit.value)
         allPosts.value = response.data
       } catch (e) {
